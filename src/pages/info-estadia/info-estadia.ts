@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { ListaEstadiaPage } from '../lista-estadia/lista-estadia';
+
 /**
- * Generated class for the CadastroEstadiaPage page.
+ * Generated class for the InfoEstadiaPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,20 +10,16 @@ import { ListaEstadiaPage } from '../lista-estadia/lista-estadia';
 
 @IonicPage()
 @Component({
-  selector: 'page-cadastro-estadia',
-  templateUrl: 'cadastro-estadia.html',
+  selector: 'page-info-estadia',
+  templateUrl: 'info-estadia.html',
 })
-export class CadastroEstadiaPage {
+export class InfoEstadiaPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad CadastroEstadiaPage');
+    console.log('ionViewDidLoad InfoEstadiaPage');
   }
-  loadPage2(){
-    this.navCtrl.push(ListaEstadiaPage);
-  }
-
 
 }

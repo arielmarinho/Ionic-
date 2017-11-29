@@ -23,13 +23,7 @@
       <ion-label stacked>Placa do carro</ion-label>
       <ion-input type="text"></ion-input>
     </ion-item>
-    <ion-item>
-  <ion-label>Horario Atual :</ion-label>
-  <ion-datetime displayFormat="HH:mm" [(ngModel)]="myDate"></ion-datetime>
-</ion-item>
-<ion-item>
-  <ion-label>Horario de Saída :</ion-label>
-  <ion-datetime displayFormat="HH:mm" [(ngModel)]="myDate"></ion-datetime>
-</ion-item>
+    <button ion-button full (click)= "loadPage2()" >Fazer Check IN</button>
   </ion-list>
 </ion-content>
+<!--ion-button full (click)= ""-->

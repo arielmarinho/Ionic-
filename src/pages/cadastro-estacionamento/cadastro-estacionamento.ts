@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { CadastroEstadiaPage } from '../cadastro-estadia/cadastro-estadia';
-
+import { Estacionamento } from '../../models/estacionamento';
 /**
  * Generated class for the CadastroEstacionamentoPage page.
  *
@@ -15,7 +15,7 @@ import { CadastroEstadiaPage } from '../cadastro-estadia/cadastro-estadia';
   templateUrl: 'cadastro-estacionamento.html',
 })
 export class CadastroEstacionamentoPage {
-
+estacionamentos : Estacionamento;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
