@@ -9,7 +9,7 @@ import { CadastroEstacionamentoPage } from '../pages/cadastro-estacionamento/cad
 import { CadastroEstadiaPage } from '../pages/cadastro-estadia/cadastro-estadia';
 import { ListaEstadiaPage } from '../pages/lista-estadia/lista-estadia';
 import { IonicStorageModule } from '@ionic/storage';
-//import { InfoEstadiaPage } from '../pages/info-estadia/info-estadia';
+import { InfoEstadiaPage } from '../pages/info-estadia/info-estadia';
 
 @NgModule({
   declarations: [
@@ -17,12 +17,13 @@ import { IonicStorageModule } from '@ionic/storage';
     HomePage,
     CadastroEstacionamentoPage,
     CadastroEstadiaPage,
-    ListaEstadiaPage
-    //InfoEstadiaPage
+    ListaEstadiaPage,
+    InfoEstadiaPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -30,8 +31,8 @@ import { IonicStorageModule } from '@ionic/storage';
     HomePage,
     CadastroEstacionamentoPage,
     CadastroEstadiaPage,
-    ListaEstadiaPage
-    //InfoEstadiaPage
+    ListaEstadiaPage,
+    InfoEstadiaPage
   ],
   providers: [
     StatusBar,
